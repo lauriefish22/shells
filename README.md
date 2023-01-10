@@ -1,10 +1,31 @@
-## The Golden Rule:
+![wirefram](./assets/Screenshot%202023-01-10%20at%2010.48.22%20AM.png)
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+HTML
+h1: Name of game
+Image 1
+Image 2
+Image 3
+Button 1
+Button 2
+Button 3
+h2: Total games, total wins, total losses
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+STATE
+Tracking:
+Correct Guesses
+Incorrect Guesses
+Total Games
 
-## Making a plan
+Events:
+When user clicks a button:
+Record
+-which button was clicked
+-if the answer was correct
+-add answer regardless of correct or incorrect to total games
+
+When answer is correct:
+Display image on existing image option
+Update totals
 
 1. **Make a drawing of your app. Simple "wireframes"**
 1. **Look at the drawing and name the HTML elements you'll need to realize your vision**

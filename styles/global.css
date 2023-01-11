@@ -72,3 +72,9 @@ main {
 #cm-button {
     position: relative;
 }
+
+.cookie::after {
+    content: '🍪';
+    position: absolute;
+    font-size: 8em;
+}

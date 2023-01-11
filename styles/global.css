@@ -38,43 +38,22 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
 }
 
-#elmo {
-    height: 450px;
-    width: 450px;
-    object-fit: contain;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-#bb {
-    max-height: 3000px;
-    max-width: 3000px;
-}
-#cm {
-    height: 750px;
-    width: 750px;
-    object-fit: contain;
-    padding-top: 50px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 5px;
-}
-.button {
+.buttons {
     justify-content: center;
     align-content: center;
-    margin-bottom: 20px;
-}
-#elmo-button {
     margin-top: 5px;
-}
-#cm-button {
-    position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 
 .cookie::after {
     content: '🍪';
     position: absolute;
     font-size: 8em;
+}
+
+.guess-data {
 }

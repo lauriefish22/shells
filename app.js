@@ -13,9 +13,9 @@ const totalEl = document.getElementById('total');
 const lossesEl = document.getElementById('losses');
 const winsEl = document.getElementById('wins');
 
-let correctGuesses = 0;
-let totalGuesses = 0;
-let incorrectGuesses = 0;
+let wins = 0;
+let losses = 0;
+let total = 0;
 
 bbButton.addEventListener('click', () => {
     handleGuess('bb');
@@ -31,22 +31,23 @@ elmoButton.addEventListener('click', () => {
 
 function handleGuess(placeTheUserClicked) {
     removeClasses();
+
     const correctPlace = pickRandomPlace();
-    const correctSectionEl = document.getElementById(`$correctPlace)-section1`);
+    const correctSectionEl = document.getElementById(`${correctPlace}-section`);
+
     correctSectionEl.classList.add('cookie');
 
+    if (correctPlace === placeTheUserClicked) {
+        wins++;
+    } else {
+        losses++;
+    }
+    total++;
 
-if (correctPlace === placeTheUserClicked) {
-    correctGuesses++;
-} else {
-    incorrectGuesses++;
+    winsEl.textContent = wins;
+    lossesEl.textContent = losses;
+    totalEl.textContent = total;
 }
-totalGuesses++;
-
-winsEl.textContent = correctGuesses;
-lossesEl.textContent = incorrectGuesses;
-totalEl.textContent = totalGuesses;
-
 function removeClasses() {
     bb.classList.remove('cookie');
     cm.classList.remove('cookie');

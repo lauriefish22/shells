@@ -39,6 +39,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    height: 300px;
 }
 
 .buttons {
@@ -54,6 +55,6 @@ main {
     position: absolute;
     font-size: 8em;
 }
-
-.guess-data {
+.hiding-place img {
+    width: 500px;
 }

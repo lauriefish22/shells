@@ -33,3 +33,28 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.hiding-places {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 300px;
+}
+
+.buttons {
+    justify-content: center;
+    align-content: center;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cookie::after {
+    content: '🍪';
+    position: absolute;
+    font-size: 8em;
+}
+.hiding-place img {
+    width: 500px;
+}
